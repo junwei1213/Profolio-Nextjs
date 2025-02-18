@@ -91,7 +91,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header>
-        <nav className="bg-background border-b border-border fixed w-full z-10">
+        <nav className="bg-background border-b border-border fixed w-full z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex items-center">
@@ -268,7 +268,6 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                           sizes="256px"
                           quality={85}
                           className="object-cover"
-                          priority
                           placeholder="blur"
                           blurDataURL={blurDataURL}
                           loading="lazy"
@@ -282,7 +281,6 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                           sizes="384px"
                           quality={85}
                           className="object-cover"
-                          priority
                           placeholder="blur"
                           blurDataURL={blurDataURL}
                           loading="lazy"

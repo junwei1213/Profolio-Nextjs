@@ -86,11 +86,3 @@
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
 }
-
-.text-muted-foreground {
-  color: #6c757d;
-}
-
-.bg-muted {
-  background-color: #f8f9fa;
-}
