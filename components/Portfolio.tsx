@@ -193,7 +193,7 @@ const Portfolio: React.FC = () => {
                   <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 to-primary/10 blur-3xl" />
                   <div className="relative rounded-full overflow-hidden border-4 border-primary/20">
                     <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-02-18%20at%2018.23.27_ed4dcf0e.jpg-DcSAw04F7twEPUc07kKP1F4VYvQQTb.jpeg"
+                      src="/profile.jpg"
                       alt="Justin Tan - Software Developer"
                       width={400}
                       height={400}
