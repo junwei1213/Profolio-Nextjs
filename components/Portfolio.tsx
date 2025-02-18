@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { Menu, X, Mail, ExternalLink, Linkedin, Moon, Sun, FileDown, ChevronDown } from "lucide-react"
+import { Menu, X, Mail, ExternalLink, Linkedin, Moon, Sun, FileDown, ChevronDown, Github } from "lucide-react"
 import NavLink from "./NavLink"
 import SocialLink from "./SocialLink"
 import ExperienceCard from "./ExperienceCard"
@@ -57,7 +57,7 @@ const Portfolio: React.FC = () => {
             <div className="flex justify-between h-16">
               <div className="flex items-center">
                 <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
-                  Justin Tan
+                  Tan Jun Wei
                 </span>
               </div>
 
@@ -154,7 +154,7 @@ const Portfolio: React.FC = () => {
               >
                 <h1 className="text-4xl md:text-6xl font-bold">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
-                    Justin Tan (Tan Jun Wei)
+                    Tan Jun Wei (Justin)
                   </span>
                 </h1>
                 <p className="text-xl text-muted-foreground">Software Developer</p>
@@ -177,12 +177,12 @@ const Portfolio: React.FC = () => {
                   <SocialLink href="mailto:junweidec@gmail.com" aria-label="Email">
                     <Mail size={24} />
                   </SocialLink>
-                  <SocialLink href="https://www.linkedin.com/in/tan-jun-wei-91a715180" aria-label="LinkedIn">
+                  <SocialLink href="https://www.linkedin.com/in/tan-jun-wei-91a715180/" aria-label="LinkedIn">
                     <Linkedin size={24} />
                   </SocialLink>
                   {/* github */}
                   <SocialLink href="https://github.com/junwei1213" aria-label="GitHub">
-                    <Badge variant="default" size={24}/>
+                    <Github size={24}/>
                   </SocialLink>
                 </div>
               </motion.div>
@@ -198,7 +198,7 @@ const Portfolio: React.FC = () => {
                   <div className="relative rounded-full overflow-hidden border-4 border-primary/20">
                     <Image
                       src="/profile.jpg"
-                      alt="Justin Tan - Software Developer"
+                      alt="Tan Jun Wei - Profile Picture"
                       width={400}
                       height={400}
                       className="object-cover"
@@ -377,7 +377,7 @@ const Portfolio: React.FC = () => {
       <footer className="bg-background border-t border-border py-8">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-muted-foreground">
-            © {new Date().getFullYear()} Justin Tan (Tan Jun Wei). All rights reserved.
+            © {new Date().getFullYear()} Tan Jun Wei (Justin). All rights reserved.
           </p>
         </div>
       </footer>

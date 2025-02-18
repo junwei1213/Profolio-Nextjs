@@ -9,9 +9,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Justin Tan (Tan Jun Wei) - Software Developer Portfolio",
+  title: "Tan Jun Wei (Justin) - Software Developer Portfolio",
   description:
-    "Portfolio of Justin Tan (Tan Jun Wei), a software developer with experience in web and mobile development.",
+    "Portfolio of Tan Jun Wei (Justin), a software developer with experience in web and mobile development.",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -40,7 +40,7 @@ export default function RootLayout({
             {
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "Justin Tan (Tan Jun Wei)",
+              "name": "Tan Jun Wei (Justin)",
               "url": "https://justin-tan.my",
               "image": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-02-18%20at%2018.23.27_ed4dcf0e.jpg-DcSAw04F7twEPUc07kKP1F4VYvQQTb.jpeg",
               "sameAs": [
