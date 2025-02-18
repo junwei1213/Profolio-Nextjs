@@ -80,3 +80,9 @@
   backface-visibility: hidden;
   perspective: 1000px;
 }
+
+.optimize-animation {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
