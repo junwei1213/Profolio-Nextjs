@@ -177,8 +177,12 @@ const Portfolio: React.FC = () => {
                   <SocialLink href="mailto:junweidec@gmail.com" aria-label="Email">
                     <Mail size={24} />
                   </SocialLink>
-                  <SocialLink href="#" aria-label="LinkedIn">
+                  <SocialLink href="https://www.linkedin.com/in/tan-jun-wei-91a715180" aria-label="LinkedIn">
                     <Linkedin size={24} />
+                  </SocialLink>
+                  {/* github */}
+                  <SocialLink href="https://github.com/junwei1213" aria-label="GitHub">
+                    <Badge variant="default" size={24}/>
                   </SocialLink>
                 </div>
               </motion.div>
