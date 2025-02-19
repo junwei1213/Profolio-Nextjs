@@ -2,7 +2,7 @@
 
 import type React from "react";
 import { useState, useEffect } from "react";
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -35,7 +35,7 @@ interface PortfolioProps {
 }
 
 const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -66,10 +66,10 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
   };
 
   const mobileOptimizedVariants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       translateX: 20,
-      scale: 1 
+      scale: 1,
     },
     visible: {
       opacity: 1,
@@ -81,9 +81,9 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
         stiffness: 120,
         damping: 10,
         delayChildren: 0.2,
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   if (!mounted) return null;
@@ -95,7 +95,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex items-center">
-              <Image
+                <Image
                   src={
                     theme === "light"
                       ? "/icons/logo-light.png"
@@ -113,7 +113,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
               </div>
 
               {/* Desktop Navigation */}
-              <div className="hidden md:flex items-center space-x-8">
+              <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
                 <NavLink href="#about">About</NavLink>
                 <NavLink href="#experience">Experience</NavLink>
                 <NavLink href="#projects">Projects</NavLink>
@@ -131,6 +131,13 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
 
               {/* Mobile menu button */}
               <div className="md:hidden flex items-center">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                >
+                  {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+                </Button>
                 <Button
                   variant="ghost"
                   size="icon"
@@ -167,19 +174,6 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                 <NavLink href="#contact" mobile>
                   Contact
                 </NavLink>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-                  className="w-full justify-start"
-                >
-                  {theme === "light" ? (
-                    <Moon size={20} className="mr-2" />
-                  ) : (
-                    <Sun size={20} className="mr-2" />
-                  )}
-                  {theme === "light" ? "Dark Mode" : "Light Mode"}
-                </Button>
               </div>
             </motion.div>
           )}
