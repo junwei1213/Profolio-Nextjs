@@ -13,7 +13,7 @@ const Seo: React.FC<SeoProps> = ({ title, description, image, article }) => {
   const defaultDescription =
     "Portfolio of Justin Tan (Tan Jun Wei), a software developer with experience in web and mobile development."
   const defaultImage =
-    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-02-18%20at%2018.23.27_ed4dcf0e.jpg-DcSAw04F7twEPUc07kKP1F4VYvQQTb.jpeg" // Replace with your actual default image URL
+    "/profile.webp" // Replace with your actual default image URL
 
   const seo = {
     title: title || defaultTitle,

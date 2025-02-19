@@ -1,12 +1,12 @@
-import type React from "react"
-import "./globals.css"
-import { Inter } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider"
-import Script from "next/script"
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import type React from "react";
+import "./globals.css";
+import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
+import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Tan Jun Wei (Justin) - Software Developer Portfolio",
@@ -19,22 +19,41 @@ export const metadata = {
     site_name: "Justin Tan Portfolio",
   },
   twitter: {
-    handle: "@yourtwitterhandle", // Replace with your actual Twitter handle
-    site: "@yourtwitterhandle",
+    handle: "@junwei1213",
+    site: "@junwei1213",
     cardType: "summary_large_image",
   },
-    generator: 'v0.dev'
-}
+  generator: "v0.dev",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        {/* favicon */}
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="icon" href="/favicon.ico" />
         <Script id="schema-org" type="application/ld+json">
           {`
             {
@@ -42,10 +61,10 @@ export default function RootLayout({
               "@type": "Person",
               "name": "Tan Jun Wei (Justin)",
               "url": "https://justin-tan.my",
-              "image": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-02-18%20at%2018.23.27_ed4dcf0e.jpg-DcSAw04F7twEPUc07kKP1F4VYvQQTb.jpeg",
+              "image": "/profile.webp",
               "sameAs": [
-                "https://www.linkedin.com/in/yourusername",
-                "https://github.com/yourusername"
+                "https://www.linkedin.com/in/tan-jun-wei-91a715180/",
+                "https://github.com/junwei1213"
               ],
               "jobTitle": "Software Developer",
               "worksFor": {
@@ -64,7 +83,5 @@ export default function RootLayout({
         <SpeedInsights />
       </body>
     </html>
-  )
+  );
 }
-
-import './globals.css'

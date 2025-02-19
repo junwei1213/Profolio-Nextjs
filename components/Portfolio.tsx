@@ -95,6 +95,18 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex items-center">
+              <Image
+                  src={
+                    theme === "light"
+                      ? "/icons/logo-light.png"
+                      : "/icons/logo-dark.png"
+                  }
+                  alt="JT Logo"
+                  width={40}
+                  height={40}
+                  className="h-9 w-auto transition-all duration-200 mr-2"
+                  priority
+                />
                 <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
                   Tan Jun Wei
                 </span>
