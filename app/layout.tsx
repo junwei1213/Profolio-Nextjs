@@ -75,6 +75,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
+      <script src="https://analytics.ahrefs.com/analytics.js" data-key="HlYWyMXM3R+9y9l4ru0kMg" async></script>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}

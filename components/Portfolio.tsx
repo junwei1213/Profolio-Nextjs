@@ -428,6 +428,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
           </div>
         </section>
 
+        
         {/* Blog Section */}
         <section id="blog" className="py-24">
           <div className="max-w-7xl mx-auto px-4">
