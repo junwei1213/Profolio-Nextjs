@@ -66,11 +66,19 @@ export default function RootLayout({
                 "https://www.linkedin.com/in/tan-jun-wei-91a715180/",
                 "https://github.com/junwei1213"
               ],
-              "jobTitle": "Software Developer",
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Your Current Company"
-              }
+              "jobTitle": "Software Developer with E-commerce Background",
+              "worksFor": [
+                {
+                  "@type": "Organization",
+                  "name": "Le Tach Pte Ltd"
+                }
+              ],
+              "hasCredential": {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "E-commerce Operations",
+                "validFrom": "2020"
+              },
+              "knowsAbout": ["Software Development", "E-commerce Operations", "Supply Chain Management", "Cross-border E-commerce"]
             }
           `}
         </Script>
