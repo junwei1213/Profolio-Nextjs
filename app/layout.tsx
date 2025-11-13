@@ -86,17 +86,6 @@ export default function RootLayout({
                 "https://github.com/junwei1213"
               ],
               "jobTitle": "Freelance Full-Stack Developer & SEO Consultant",
-              "worksFor": [
-                {
-                  "@type": "Organization",
-                  "name": "Le Tach Pte Ltd"
-                }
-              ],
-              "hasCredential": {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "E-commerce Operations",
-                "validFrom": "2020"
-              },
               "knowsAbout": ["Next.js", "React", "Vue.js", "Android Development", "iOS Development", "SEO Optimization", "Web Development", "Mobile App Development", "UI/UX Design", "Rapid Prototyping"]
             }
           `}
