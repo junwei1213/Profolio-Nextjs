@@ -20,12 +20,25 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     url: "https://justin-tan.my",
-    site_name: "Tan Jun Wei - Full-Stack Developer",
+    siteName: "Tan Jun Wei - Full-Stack Developer",
+    title: "Tan Jun Wei | High-Performance Web/App Dev & SEO Expert SG/MY",
+    description: "Remote dev (SG/MY exp.) specializing in rapid prototyping, UI/UX sensitivity, Next.js/React Native & SEO. Your solution-driven expert. Let's build it!",
+    images: [
+      {
+        url: "https://justin-tan.my/profile.webp",
+        width: 400,
+        height: 400,
+        alt: "Tan Jun Wei - Full-Stack Developer Profile",
+      },
+    ],
   },
   twitter: {
-    handle: "@junwei1213",
+    card: "summary_large_image",
     site: "@junwei1213",
-    cardType: "summary_large_image",
+    creator: "@junwei1213",
+    title: "Tan Jun Wei | High-Performance Web/App Dev & SEO Expert SG/MY",
+    description: "Remote dev (SG/MY exp.) specializing in rapid prototyping, UI/UX sensitivity, Next.js/React Native & SEO. Your solution-driven expert. Let's build it!",
+    images: ["https://justin-tan.my/profile.webp"],
   },
   generator: "v0.dev",
 };
