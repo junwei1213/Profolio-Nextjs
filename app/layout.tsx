@@ -19,13 +19,13 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://justin-tan.my",
+    url: "https://justintan.my",
     siteName: "Tan Jun Wei - Full-Stack Developer",
     title: "Tan Jun Wei | High-Performance Web/App Dev & SEO Expert SG/MY",
     description: "Remote dev (SG/MY exp.) specializing in rapid prototyping, UI/UX sensitivity, Next.js/React Native & SEO. Your solution-driven expert. Let's build it!",
     images: [
       {
-        url: "https://justin-tan.my/profile.webp",
+        url: "https://justintan.my/profile.webp",
         width: 400,
         height: 400,
         alt: "Tan Jun Wei - Full-Stack Developer Profile",
@@ -38,7 +38,7 @@ export const metadata = {
     creator: "@junwei1213",
     title: "Tan Jun Wei | High-Performance Web/App Dev & SEO Expert SG/MY",
     description: "Remote dev (SG/MY exp.) specializing in rapid prototyping, UI/UX sensitivity, Next.js/React Native & SEO. Your solution-driven expert. Let's build it!",
-    images: ["https://justin-tan.my/profile.webp"],
+    images: ["https://justintan.my/profile.webp"],
   },
   generator: "v0.dev",
 };
@@ -92,8 +92,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Tan Jun Wei (Justin)",
-              "url": "https://justin-tan.my",
-              "image": "/profile.webp",
+              "url": "https://justintan.my",
+              "image": "https://justintan.my/profile.webp",
               "sameAs": [
                 "https://www.linkedin.com/in/tan-jun-wei-91a715180/",
                 "https://github.com/junwei1213"
