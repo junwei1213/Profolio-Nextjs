@@ -35,6 +35,19 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="facebook-domain-verification" content="z6gftbehgp519taiykymcg3w8smlsc" />
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-HVH8LDY8RQ"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-HVH8LDY8RQ');
+          `}
+        </Script>
         {/* favicon */}
         <link
           rel="apple-touch-icon"
