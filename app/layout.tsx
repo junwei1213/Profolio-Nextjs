@@ -9,14 +9,18 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Tan Jun Wei (Justin) - Software Developer Portfolio",
+  // Title 保持不变：完美
+  title: "Tan Jun Wei | High-Performance Web/App Dev & SEO Expert SG/MY",
+
+  // 优化 Description：强调远程和解决方案驱动 (160 字符)
   description:
-    "Portfolio of Tan Jun Wei (Justin), a software developer with experience in web and mobile development.",
+    "Remote dev (SG/MY exp.) specializing in rapid prototyping, UI/UX sensitivity, Next.js/React Native & SEO. Your solution-driven expert. Let's build it!",
+
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://justin-tan.my",
-    site_name: "Justin Tan Portfolio",
+    site_name: "Tan Jun Wei - Full-Stack Developer",
   },
   twitter: {
     handle: "@junwei1213",
@@ -35,7 +39,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="facebook-domain-verification" content="z6gftbehgp519taiykymcg3w8smlsc" />
-        {/* Google Analytics */}
+        {/* Google Analytics - 最佳实践 */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-HVH8LDY8RQ"
@@ -48,7 +52,7 @@ export default function RootLayout({
             gtag('config', 'G-HVH8LDY8RQ');
           `}
         </Script>
-        {/* favicon */}
+        {/* Favicons & Manifests */}
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -68,6 +72,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="icon" href="/favicon.ico" />
+        {/* 优化后的 Schema Markup */}
         <Script id="schema-org" type="application/ld+json">
           {`
             {
@@ -80,7 +85,7 @@ export default function RootLayout({
                 "https://www.linkedin.com/in/tan-jun-wei-91a715180/",
                 "https://github.com/junwei1213"
               ],
-              "jobTitle": "Software Developer with E-commerce Background",
+              "jobTitle": "Freelance Full-Stack Developer & SEO Consultant",
               "worksFor": [
                 {
                   "@type": "Organization",
@@ -92,7 +97,7 @@ export default function RootLayout({
                 "credentialCategory": "E-commerce Operations",
                 "validFrom": "2020"
               },
-              "knowsAbout": ["Software Development", "E-commerce Operations", "Supply Chain Management", "Cross-border E-commerce"]
+              "knowsAbout": ["Next.js", "React", "Vue.js", "Android Development", "iOS Development", "SEO Optimization", "Web Development", "Mobile App Development", "UI/UX Design", "Rapid Prototyping"]
             }
           `}
         </Script>

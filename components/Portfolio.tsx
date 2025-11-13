@@ -201,13 +201,13 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                 transition={{ duration: 0.5 }}
                 className="text-center md:text-left space-y-6"
               >
-                <h1 className="text-4xl md:text-6xl font-bold">
+                <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
-                    Tan Jun Wei (Justin)
+                    Building High-Performance Digital Solutions
                   </span>
                 </h1>
-                <p className="text-xl text-muted-foreground">
-                  Software Developer
+                <p className="text-lg md:text-xl text-muted-foreground font-medium">
+                  Web, Mobile & SEO Expert | Tan Jun Wei | SG & MY | Remote
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                   <Button size="lg" className="group">
@@ -307,6 +307,157 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
             <ChevronDown className="w-6 h-6 text-muted-foreground" />
           </motion.div>
         </motion.section>
+
+        {/* Core Value Proposition Section */}
+        <section className="py-20 bg-background">
+          <div className="max-w-7xl mx-auto px-4">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={containerVariants}
+              className="space-y-16"
+            >
+              {/* Main Value Proposition */}
+              <div className="text-center space-y-4">
+                <motion.h2
+                  variants={itemVariants}
+                  className="text-3xl md:text-5xl font-bold"
+                >
+                  Your Multi-Platform Growth Engine
+                </motion.h2>
+                <motion.p
+                  variants={itemVariants}
+                  className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto"
+                >
+                  From rapid prototyping to production-ready solutions, I deliver high-performance digital experiences across web, mobile, and search.
+                </motion.p>
+              </div>
+
+              {/* Core Competencies Grid */}
+              <motion.div
+                variants={containerVariants}
+                className="grid md:grid-cols-3 gap-8"
+              >
+                {/* Rapid Prototyping */}
+                <motion.div
+                  variants={itemVariants}
+                  className="space-y-4 p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-shadow"
+                >
+                  <h3 className="text-2xl font-bold">Rapid Prototyping</h3>
+                  <p className="text-muted-foreground">
+                    Turn ideas into working prototypes fast. My "vibe coding" approach combines speed with quality, getting your MVP to market in record time.
+                  </p>
+                </motion.div>
+
+                {/* UI/UX Sensitivity */}
+                <motion.div
+                  variants={itemVariants}
+                  className="space-y-4 p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-shadow"
+                >
+                  <h3 className="text-2xl font-bold">UI/UX Sensitivity & Design Integration</h3>
+                  <p className="text-muted-foreground">
+                    Not just a coder - I bring design thinking to development. Beautiful, intuitive interfaces backed by clean, maintainable code.
+                  </p>
+                </motion.div>
+
+                {/* Performance-First */}
+                <motion.div
+                  variants={itemVariants}
+                  className="space-y-4 p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-shadow"
+                >
+                  <h3 className="text-2xl font-bold">Performance-First Development</h3>
+                  <p className="text-muted-foreground">
+                    Every line of code optimized for speed and efficiency. From Core Web Vitals to bundle size, performance is non-negotiable.
+                  </p>
+                </motion.div>
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Service Areas Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="max-w-7xl mx-auto px-4">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={containerVariants}
+              className="space-y-16"
+            >
+              {/* Section Header */}
+              <div className="text-center space-y-4">
+                <motion.h2
+                  variants={itemVariants}
+                  className="text-3xl md:text-5xl font-bold"
+                >
+                  Service Areas: Web, Mobile & SEO Specialist
+                </motion.h2>
+                <motion.p
+                  variants={itemVariants}
+                  className="text-lg text-muted-foreground max-w-3xl mx-auto"
+                >
+                  Full-stack expertise across the entire digital ecosystem
+                </motion.p>
+              </div>
+
+              {/* Service Cards */}
+              <motion.div
+                variants={containerVariants}
+                className="grid md:grid-cols-3 gap-8"
+              >
+                {/* Web Development */}
+                <motion.div
+                  variants={itemVariants}
+                  className="space-y-4 p-8 rounded-lg border border-border bg-background hover:shadow-xl transition-all hover:border-primary/50"
+                >
+                  <h3 className="text-2xl font-bold">Web Development & Performance Optimization</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Next.js, React, Vue.js - Building lightning-fast web applications with modern frameworks. SEO-optimized, accessible, and scalable.
+                  </p>
+                  <div className="pt-4">
+                    <Badge variant="outline" className="mr-2">Next.js</Badge>
+                    <Badge variant="outline" className="mr-2">React</Badge>
+                    <Badge variant="outline">Vue</Badge>
+                  </div>
+                </motion.div>
+
+                {/* Mobile Development */}
+                <motion.div
+                  variants={itemVariants}
+                  className="space-y-4 p-8 rounded-lg border border-border bg-background hover:shadow-xl transition-all hover:border-primary/50"
+                >
+                  <h3 className="text-2xl font-bold">Cross-Platform App Development</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    React Native, Flutter - One codebase, two platforms. Native performance with cross-platform efficiency for iOS and Android.
+                  </p>
+                  <div className="pt-4">
+                    <Badge variant="outline" className="mr-2">React Native</Badge>
+                    <Badge variant="outline" className="mr-2">Android</Badge>
+                    <Badge variant="outline">iOS</Badge>
+                  </div>
+                </motion.div>
+
+                {/* SEO Consulting */}
+                <motion.div
+                  variants={itemVariants}
+                  className="space-y-4 p-8 rounded-lg border border-border bg-background hover:shadow-xl transition-all hover:border-primary/50"
+                >
+                  <h3 className="text-2xl font-bold">Practical SEO Consulting & Ranking Growth</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Technical SEO, on-page optimization, and performance tuning. Drive organic traffic with data-driven strategies and implementation.
+                  </p>
+                  <div className="pt-4">
+                    <Badge variant="outline" className="mr-2">Technical SEO</Badge>
+                    <Badge variant="outline" className="mr-2">Analytics</Badge>
+                    <Badge variant="outline">Core Web Vitals</Badge>
+                  </div>
+                </motion.div>
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
 
         {/* Skills Section */}
         <section className="py-16 bg-muted">
