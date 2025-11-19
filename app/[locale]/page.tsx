@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { setRequestLocale } from 'next-intl/server'
+import { unstable_setRequestLocale } from 'next-intl/server'
 import Portfolio from "@/components/Portfolio"
 import { locales } from '@/i18n'
 
@@ -17,7 +17,7 @@ export default async function Home({
   const { locale } = await params
 
   // Enable static rendering
-  setRequestLocale(locale)
+  unstable_setRequestLocale(locale)
 
   const blurDataURL = fs.readFileSync(path.join(process.cwd(), 'public/profile-blurDataURL.txt'), 'utf8')
 
