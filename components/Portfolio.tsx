@@ -109,6 +109,8 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   height={40}
                   className="h-9 w-auto transition-all duration-200 mr-2"
                   priority
+                  quality={90}
+                  loading="eager"
                 />
                 <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
                   Tan Jun Wei
