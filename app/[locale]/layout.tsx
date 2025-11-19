@@ -6,7 +6,7 @@ import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { locales } from '@/i18n';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -78,6 +78,10 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+
+  // Enable static rendering
+  setRequestLocale(locale);
+
   const messages = await getMessages();
 
   return (
