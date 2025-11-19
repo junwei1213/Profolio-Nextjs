@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://justin-tan.my/sitemap.xml

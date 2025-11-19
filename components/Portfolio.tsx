@@ -17,6 +17,7 @@ import {
   FileDown,
   ChevronDown,
   Github,
+  MessageCircle,
 } from "lucide-react";
 import NavLink from "./NavLink";
 import SocialLink from "./SocialLink";
@@ -647,11 +648,22 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
 
               <motion.div
                 variants={itemVariants}
-                className="flex justify-center"
+                className="flex flex-col sm:flex-row justify-center gap-4"
               >
                 <Button asChild size="lg" className="group">
                   <Link href="mailto:junweidec@gmail.com">
-                    {t('contact.button')}
+                    <Mail className="mr-2" size={20} />
+                    {t('contact.emailButton')}
+                    <ExternalLink
+                      className="ml-2 group-hover:translate-x-1 transition-transform"
+                      size={20}
+                    />
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="group">
+                  <Link href="https://api.whatsapp.com/send/?phone=601111427780&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="mr-2" size={20} />
+                    {t('contact.whatsappButton')}
                     <ExternalLink
                       className="ml-2 group-hover:translate-x-1 transition-transform"
                       size={20}

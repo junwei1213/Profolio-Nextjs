@@ -39,13 +39,23 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const locale = localeParam as keyof typeof metadataByLocale;
   const meta = metadataByLocale[locale] || metadataByLocale.en;
 
+  const canonicalUrl = `https://justintan.my/${locale}`;
+
   return {
     title: meta.title,
     description: meta.description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        'en': 'https://justintan.my/en',
+        'zh': 'https://justintan.my/zh',
+        'ms': 'https://justintan.my/ms',
+      },
+    },
     openGraph: {
       type: "website",
       locale: locale === 'zh' ? 'zh_CN' : locale === 'ms' ? 'ms_MY' : 'en_US',
-      url: `https://justintan.my${locale === 'en' ? '' : `/${locale}`}`,
+      url: canonicalUrl,
       siteName: "Tan Jun Wei - Full-Stack Developer",
       title: meta.title,
       description: meta.description,
