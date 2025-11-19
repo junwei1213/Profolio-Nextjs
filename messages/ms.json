@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "about": "Tentang",
+    "experience": "Pengalaman",
+    "projects": "Projek",
+    "blog": "Blog",
+    "contact": "Hubungi"
+  },
+  "hero": {
+    "title": "Pembangun Full-Stack Berkuasa AI. Reka Bentuk → Kod → Deploy, Semua dalam Satu.",
+    "subtitle": "Tidak perlu pasukan 10 orang. Saya gunakan alat AI untuk selesaikan aliran kerja reka bentuk-ke-pengeluaran secara solo—menyampaikan produk yang boleh iterasi sendiri, bukan sekadar kod.",
+    "contactBtn": "Hubungi Saya",
+    "downloadCV": "Muat Turun CV"
+  },
+  "valueProposition": {
+    "title": "Kenapa Pilih Pembangun AI-Native pada 2025",
+    "subtitle": "Dalam era AI, pengalaman = kebolehsuaian × penguasaan alat, bukan tahun. Saya mampatkan kitaran pembangunan 3 bulan kepada 3 minggu menggunakan Claude Code, Cursor, dan v0.dev—kualiti sama, kos 1/10.",
+    "rapidPrototyping": {
+      "title": "Prototaip Dipercepat AI",
+      "description": "Pembangun tradisional ambil 2 hari untuk mockup UI? Saya jana reka bentuk fideliti tinggi dalam 2 jam dengan alat AI, kemudian tukar kepada kod pengeluaran serta-merta. Penyampaian MVP 3 minggu adalah standard saya."
+    },
+    "uiux": {
+      "title": "Aliran Kerja AI Full-Stack",
+      "description": "Dari reka bentuk Figma (dibantu AI) ke pengeluaran Next.js (debug AI), saya kendalikan keseluruhan stack. Anda dapat kod asas berdokumen sendiri, berujian—tanpa mengupah pasukan."
+    },
+    "performance": {
+      "title": "Pengoptimuman Berkuasa AI",
+      "description": "Semasa orang lain Google mesej ralat, saya biar AI analisis jejak stack dan jana pembetulan. Debug 70% lebih pantas, dokumentasi automatik, semakan kod kos-sifar melalui LLM."
+    }
+  },
+  "services": {
+    "title": "Bidang Perkhidmatan: Pembangunan Ditingkatkan AI & Perundingan Strategik",
+    "subtitle": "Memanfaatkan AI untuk menyampaikan apa yang pasukan tradisional tidak boleh—kelajuan tanpa kompromi",
+    "web": {
+      "title": "Pembangunan Web Ditingkatkan AI",
+      "description": "Next.js 14 + aliran kerja dibantu AI menyampaikan aplikasi pengeluaran dalam 2 minggu, bukan 3 bulan. Skor PageSpeed 95+, SEO auto-jana, analitik terbina dalam—standard, bukan tambahan."
+    },
+    "mobile": {
+      "title": "Penyelesaian Mobile Pintar dengan Integrasi AI",
+      "description": "Aplikasi React Native di-debug 5x lebih pantas dengan alat AI. Tambahan: integrasikan API ChatGPT/Claude ke dalam aplikasi iOS/Android anda untuk ciri berkuasa AI yang beri anda kelebihan bersaing."
+    },
+    "seo": {
+      "title": "Perundingan Integrasi & Automasi AI",
+      "description": "Tukar aplikasi lama anda jadi 'berkuasa AI' dalam sekelip mata. Saya integrasikan API GPT-4, Claude, atau Gemini untuk chatbot pintar, penjanaan kandungan, atau analisis data—membuka aliran pendapatan baharu."
+    }
+  },
+  "skills": {
+    "title": "Kemahiran & Kepakaran",
+    "subtitle": "Senarai lengkap kemahiran teknikal dan bidang kepakaran saya"
+  },
+  "experience": {
+    "title": "Pengalaman Kerja",
+    "subtitle": "Perjalanan profesional dan pencapaian saya"
+  },
+  "projects": {
+    "title": "Projek Pilihan",
+    "subtitle": "Pilihan karya saya yang paling berkesan"
+  },
+  "blog": {
+    "title": "Artikel Terkini",
+    "subtitle": "Pemikiran dan pandangan tentang pembangunan perisian"
+  },
+  "contact": {
+    "title": "Hubungi Saya",
+    "subtitle": "Saya kini tersedia untuk peluang baharu",
+    "button": "Hubungi Saya"
+  },
+  "footer": {
+    "copyright": "© {year} Tan Jun Wei (Justin). Hak cipta terpelihara."
+  }
+}

@@ -1,21 +1,35 @@
 import type { Skill, Experience, Project, BlogPost } from "@/types/portfolio"
 
 export const skills: Skill[] = [
-  "Java",
+  // AI & Modern Development
+  "AI-Assisted Development (Claude Code, Cursor)",
+  "LLM Integration (ChatGPT, Claude API)",
+  "Prompt Engineering",
+  "AI Workflow Automation",
+
+  // Frontend
+  "Next.js 14/15",
   "React.js",
   "Vue.js",
-  "Android",
-  "MS-SQL",
-  "Apache Tomcat",
-  "Struts",
-  "API Integration",
-  "Next.js",
   "TypeScript",
-  "E-commerce Operations",
-  "Multi-platform Management",
-  "Supply Chain Management",
-  "Cross-border E-commerce",
-  "Inventory Management",
+  "Tailwind CSS",
+
+  // Mobile
+  "React Native",
+  "Android (Java/Kotlin)",
+  "iOS Development",
+
+  // Backend & Database
+  "Node.js",
+  "API Development",
+  "MS-SQL",
+  "Firebase",
+
+  // Tools & Deployment
+  "Vercel / Netlify",
+  "Git & CI/CD",
+  "Performance Optimization",
+  "SEO Technical Implementation",
 ]
 
 export const projects: Project[] = [
@@ -41,11 +55,11 @@ export const projects: Project[] = [
       "Built a feature-rich, cross-platform quiz application using React Native for iOS and Android. Implemented real-time score tracking, global leaderboards, and user authentication with Firebase backend. Features 10+ quiz categories, timed challenges, and progress analytics. Optimized app performance achieving <2s load time and smooth 60fps animations. Demonstrated rapid prototyping skills by delivering MVP in 3 weeks.",
   },
   {
-    title: "Personal Portfolio Website (This Site!)",
-    description: "High-performance Next.js portfolio with SEO optimization and analytics",
-    tech: ["Next.js 14", "TypeScript", "Shadcn UI", "Tailwind CSS", "Vercel", "Google Analytics"],
+    title: "AI-Powered Portfolio Website (This Site!)",
+    description: "High-performance Next.js portfolio built 70% faster using AI-assisted development",
+    tech: ["Next.js 15", "TypeScript", "next-intl (i18n)", "Shadcn UI", "Claude Code", "Vercel"],
     details:
-      "Designed and developed a modern, SEO-optimized portfolio website using Next.js 14 and TypeScript. Achieved 95+ Google PageSpeed score through image optimization (WebP format with blur placeholders), code splitting, and performance tuning. Implemented responsive design with Tailwind CSS and Shadcn UI for polished aesthetics. Features include dark/light theme toggle, blog section with MDX support, Google Analytics integration, and structured data (Schema.org) for enhanced search visibility. Deployed on Vercel with CI/CD pipeline for instant updates.",
+      "Built this portfolio in 3 days instead of 2 weeks by leveraging Claude Code for component generation and debugging. Achieved 95+ PageSpeed score through AI-suggested optimizations. Features: multi-language support (EN/ZH/MS) via next-intl, responsive design with Tailwind, dark/light themes, and SEO-optimized metadata per language. The entire codebase is self-documented via AI-generated comments. Demonstrates real-world AI-native development workflow—fast iteration, clean code, production-ready.",
   },
 ]
 

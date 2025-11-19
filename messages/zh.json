@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "about": "关于",
+    "experience": "经验",
+    "projects": "项目",
+    "blog": "博客",
+    "contact": "联系"
+  },
+  "hero": {
+    "title": "AI 驱动的全栈开发者。设计 → 代码 → 部署,一人完成。",
+    "subtitle": "不需要 10 人团队。我借助 AI 陈骏玮立完成设计到部署的全流程——交付的是能自我迭代的产品,而非仅仅是代码。",
+    "contactBtn": "联系我",
+    "downloadCV": "下载简历"
+  },
+  "valueProposition": {
+    "title": "为什么选择 2025 年的 AI 原生开发者",
+    "subtitle": "在 AI 时代,经验 = 适应力 × 工具掌控力,而非年资。我使用 Claude Code、Cursor 和 v0.dev 将 3 个月的开发周期压缩到 3 周——同样的质量,1/10 的成本。",
+    "rapidPrototyping": {
+      "title": "AI 加速原型开发",
+      "description": "传统开发者花 2 天做 UI 原型?我用 AI 工具 2 小时生成高保真设计,然后即刻转换为生产代码。3 周交付 MVP 是我的标准。"
+    },
+    "uiux": {
+      "title": "全栈 AI 工作流",
+      "description": "从 Figma 设计(AI 辅助)到 Next.js 部署(AI 调试),我处理整个技术栈。你获得的是自带文档、测试覆盖的代码库——无需雇佣团队。"
+    },
+    "performance": {
+      "title": "AI 驱动优化",
+      "description": "当别人还在 Google 搜索错误信息时,我让 AI 分析堆栈跟踪并生成修复方案。调试速度快 70%,自动生成文档,通过 LLM 实现零成本代码审查。"
+    }
+  },
+  "services": {
+    "title": "服务领域:AI 增强开发与战略咨询",
+    "subtitle": "利用 AI 交付传统团队无法实现的目标——速度与质量兼得",
+    "web": {
+      "title": "AI 增强 Web 开发",
+      "description": "Next.js 14 + AI 辅助工作流,2 周而非 3 个月交付生产应用。95+ PageSpeed 分数、自动生成 SEO、内置分析——这些都是标配,而非额外服务。"
+    },
+    "mobile": {
+      "title": "智能移动解决方案与 AI 集成",
+      "description": "React Native 应用,调试速度快 5 倍。更进一步:将 ChatGPT/Claude API 集成到你的 iOS/Android 应用中,打造 AI 驱动功能,获得竞争优势。"
+    },
+    "seo": {
+      "title": "AI 集成与自动化咨询",
+      "description": "一夜之间让你的旧应用变成 'AI 驱动'。我集成 GPT-4、Claude 或 Gemini API,实现智能聊天机器人、内容生成或数据分析——开辟新的收入来源。"
+    }
+  },
+  "skills": {
+    "title": "技能与专长",
+    "subtitle": "我的技术技能和专业领域的完整列表"
+  },
+  "experience": {
+    "title": "工作经验",
+    "subtitle": "我的职业旅程和成就"
+  },
+  "projects": {
+    "title": "精选项目",
+    "subtitle": "我最具影响力的作品精选"
+  },
+  "blog": {
+    "title": "最新文章",
+    "subtitle": "关于软件开发的思考和见解"
+  },
+  "contact": {
+    "title": "联系我",
+    "subtitle": "我目前可以接受新的机会",
+    "button": "联系我"
+  },
+  "footer": {
+    "copyright": "© {year} 陈骏玮 (Justin)。保留所有权利。"
+  }
+}

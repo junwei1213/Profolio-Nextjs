@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Full-Stack Developer Powered by AI. Design → Code → Deploy, All in One.",
+    "subtitle": "No 10-person team needed. I leverage AI tools to complete design-to-deployment workflows solo—delivering products that self-iterate, not just code.",
+    "contactBtn": "Contact Me",
+    "downloadCV": "Download CV"
+  },
+  "valueProposition": {
+    "title": "Why Choose an AI-Native Developer in 2025",
+    "subtitle": "In the AI era, experience = adaptability × tool mastery, not years. I compress 3-month dev cycles into 3 weeks using Claude Code, Cursor, and v0.dev—same quality, 1/10th the cost.",
+    "rapidPrototyping": {
+      "title": "AI-Accelerated Prototyping",
+      "description": "Traditional devs spend 2 days on UI mockups? I generate high-fidelity designs in 2 hours with AI tools, then convert to production code instantly. 3-week MVP delivery is my standard."
+    },
+    "uiux": {
+      "title": "Full-Stack AI Workflow",
+      "description": "From Figma design (AI-assisted) to Next.js deployment (AI-debugged), I handle the entire stack. You get a self-documenting, test-covered codebase—without hiring a team."
+    },
+    "performance": {
+      "title": "AI-Powered Optimization",
+      "description": "While others Google error messages, I let AI analyze stack traces and generate fixes. 70% faster debugging, automatic documentation, zero-cost code reviews via LLMs."
+    }
+  },
+  "services": {
+    "title": "Service Areas: AI-Enhanced Development & Strategic Consulting",
+    "subtitle": "Leveraging AI to deliver what traditional teams can't—speed without compromise",
+    "web": {
+      "title": "AI-Enhanced Web Development",
+      "description": "Next.js 14 + AI-assisted workflows deliver production apps in 2 weeks, not 3 months. 95+ PageSpeed scores, auto-generated SEO, and built-in analytics—standard, not extras."
+    },
+    "mobile": {
+      "title": "Smart Mobile Solutions with AI Integration",
+      "description": "React Native apps debugged 5x faster with AI tools. Plus: integrate ChatGPT/Claude APIs into your iOS/Android apps for AI-powered features that give you a competitive edge."
+    },
+    "seo": {
+      "title": "AI Integration & Automation Consulting",
+      "description": "Turn your legacy app 'AI-powered' overnight. I integrate GPT-4, Claude, or Gemini APIs for smart chatbots, content generation, or data analysis—opening new revenue streams."
+    }
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "subtitle": "A comprehensive list of my technical skills and areas of expertise"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "My professional journey and achievements"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of my most impactful work"
+  },
+  "blog": {
+    "title": "Latest Articles",
+    "subtitle": "Thoughts and insights about software development"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "I'm currently available for new opportunities",
+    "button": "Contact Me"
+  },
+  "footer": {
+    "copyright": "© {year} Tan Jun Wei (Justin). All rights reserved."
+  }
+}

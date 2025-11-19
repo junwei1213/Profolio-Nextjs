@@ -28,13 +28,15 @@ import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import fs from "fs";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 interface PortfolioProps {
   blurDataURL: string; // Define the prop type
 }
 
 const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
+  const t = useTranslations();
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -114,11 +116,12 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
 
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-                <NavLink href="#about">About</NavLink>
-                <NavLink href="#experience">Experience</NavLink>
-                <NavLink href="#projects">Projects</NavLink>
-                <NavLink href="#blog">Blog</NavLink>
-                <NavLink href="#contact">Contact</NavLink>
+                <NavLink href="#about">{t('nav.about')}</NavLink>
+                <NavLink href="#experience">{t('nav.experience')}</NavLink>
+                <NavLink href="#projects">{t('nav.projects')}</NavLink>
+                <NavLink href="#blog">{t('nav.blog')}</NavLink>
+                <NavLink href="#contact">{t('nav.contact')}</NavLink>
+                <LanguageSwitcher />
                 <Button
                   variant="ghost"
                   size="icon"
@@ -131,6 +134,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
 
               {/* Mobile menu button */}
               <div className="md:hidden flex items-center">
+                <LanguageSwitcher />
                 <Button
                   variant="ghost"
                   size="icon"
@@ -160,19 +164,19 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
             >
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 backdrop-blur-md bg-background/80">
                 <NavLink href="#about" mobile>
-                  About
+                  {t('nav.about')}
                 </NavLink>
                 <NavLink href="#experience" mobile>
-                  Experience
+                  {t('nav.experience')}
                 </NavLink>
                 <NavLink href="#projects" mobile>
-                  Projects
+                  {t('nav.projects')}
                 </NavLink>
                 <NavLink href="#blog" mobile>
-                  Blog
+                  {t('nav.blog')}
                 </NavLink>
                 <NavLink href="#contact" mobile>
-                  Contact
+                  {t('nav.contact')}
                 </NavLink>
               </div>
             </motion.div>
@@ -203,15 +207,15 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
               >
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
-                    Building High-Performance Digital Solutions
+                    {t('hero.title')}
                   </span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground font-medium">
-                  Web, Mobile & SEO Expert | Tan Jun Wei | SG & MY | Remote
+                  {t('hero.subtitle')}
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                   <Button size="lg" className="group">
-                    Contact Me
+                    {t('hero.contactBtn')}
                     <ExternalLink
                       className="ml-2 group-hover:translate-x-1 transition-transform"
                       size={20}
@@ -225,7 +229,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                       window.open("/resume-tan-jun-wei.pdf", "_blank")
                     }
                   >
-                    Download CV
+                    {t('hero.downloadCV')}
                     <FileDown
                       className="ml-2 group-hover:translate-y-1 transition-transform"
                       size={20}
@@ -324,13 +328,13 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   variants={itemVariants}
                   className="text-3xl md:text-5xl font-bold"
                 >
-                  Your Multi-Platform Growth Engine
+                  {t('valueProposition.title')}
                 </motion.h2>
                 <motion.p
                   variants={itemVariants}
                   className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto"
                 >
-                  From rapid prototyping to production-ready solutions, I deliver high-performance digital experiences across web, mobile, and search.
+                  {t('valueProposition.subtitle')}
                 </motion.p>
               </div>
 
@@ -344,9 +348,9 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   variants={itemVariants}
                   className="space-y-4 p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-shadow"
                 >
-                  <h3 className="text-2xl font-bold">Rapid Prototyping</h3>
+                  <h3 className="text-2xl font-bold">{t('valueProposition.rapidPrototyping.title')}</h3>
                   <p className="text-muted-foreground">
-                    Turn ideas into working prototypes fast. My "vibe coding" approach combines speed with quality, getting your MVP to market in record time.
+                    {t('valueProposition.rapidPrototyping.description')}
                   </p>
                 </motion.div>
 
@@ -355,9 +359,9 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   variants={itemVariants}
                   className="space-y-4 p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-shadow"
                 >
-                  <h3 className="text-2xl font-bold">UI/UX Sensitivity & Design Integration</h3>
+                  <h3 className="text-2xl font-bold">{t('valueProposition.uiux.title')}</h3>
                   <p className="text-muted-foreground">
-                    Not just a coder - I bring design thinking to development. Beautiful, intuitive interfaces backed by clean, maintainable code.
+                    {t('valueProposition.uiux.description')}
                   </p>
                 </motion.div>
 
@@ -366,9 +370,9 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   variants={itemVariants}
                   className="space-y-4 p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-shadow"
                 >
-                  <h3 className="text-2xl font-bold">Performance-First Development</h3>
+                  <h3 className="text-2xl font-bold">{t('valueProposition.performance.title')}</h3>
                   <p className="text-muted-foreground">
-                    Every line of code optimized for speed and efficiency. From Core Web Vitals to bundle size, performance is non-negotiable.
+                    {t('valueProposition.performance.description')}
                   </p>
                 </motion.div>
               </motion.div>
@@ -392,13 +396,13 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   variants={itemVariants}
                   className="text-3xl md:text-5xl font-bold"
                 >
-                  Service Areas: Web, Mobile & SEO Specialist
+                  {t('services.title')}
                 </motion.h2>
                 <motion.p
                   variants={itemVariants}
                   className="text-lg text-muted-foreground max-w-3xl mx-auto"
                 >
-                  Full-stack expertise across the entire digital ecosystem
+                  {t('services.subtitle')}
                 </motion.p>
               </div>
 
@@ -412,9 +416,9 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   variants={itemVariants}
                   className="space-y-4 p-8 rounded-lg border border-border bg-background hover:shadow-xl transition-all hover:border-primary/50"
                 >
-                  <h3 className="text-2xl font-bold">Web Development & Performance Optimization</h3>
+                  <h3 className="text-2xl font-bold">{t('services.web.title')}</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Next.js, React, Vue.js - Building lightning-fast web applications with modern frameworks. SEO-optimized, accessible, and scalable.
+                    {t('services.web.description')}
                   </p>
                   <div className="pt-4">
                     <Badge variant="outline" className="mr-2">Next.js</Badge>
@@ -428,9 +432,9 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   variants={itemVariants}
                   className="space-y-4 p-8 rounded-lg border border-border bg-background hover:shadow-xl transition-all hover:border-primary/50"
                 >
-                  <h3 className="text-2xl font-bold">Cross-Platform App Development</h3>
+                  <h3 className="text-2xl font-bold">{t('services.mobile.title')}</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    React Native, Flutter - One codebase, two platforms. Native performance with cross-platform efficiency for iOS and Android.
+                    {t('services.mobile.description')}
                   </p>
                   <div className="pt-4">
                     <Badge variant="outline" className="mr-2">React Native</Badge>
@@ -444,9 +448,9 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   variants={itemVariants}
                   className="space-y-4 p-8 rounded-lg border border-border bg-background hover:shadow-xl transition-all hover:border-primary/50"
                 >
-                  <h3 className="text-2xl font-bold">Practical SEO Consulting & Ranking Growth</h3>
+                  <h3 className="text-2xl font-bold">{t('services.seo.title')}</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Technical SEO, on-page optimization, and performance tuning. Drive organic traffic with data-driven strategies and implementation.
+                    {t('services.seo.description')}
                   </p>
                   <div className="pt-4">
                     <Badge variant="outline" className="mr-2">Technical SEO</Badge>
@@ -474,14 +478,13 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   variants={itemVariants}
                   className="text-3xl md:text-4xl font-bold"
                 >
-                  Skills & Expertise
+                  {t('skills.title')}
                 </motion.h2>
                 <motion.p
                   variants={itemVariants}
                   className="text-muted-foreground max-w-2xl mx-auto"
                 >
-                  A comprehensive list of my technical skills and areas of
-                  expertise
+                  {t('skills.subtitle')}
                 </motion.p>
               </div>
 
@@ -523,13 +526,13 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   variants={itemVariants}
                   className="text-3xl md:text-4xl font-bold"
                 >
-                  Work Experience
+                  {t('experience.title')}
                 </motion.h2>
                 <motion.p
                   variants={itemVariants}
                   className="text-muted-foreground max-w-2xl mx-auto"
                 >
-                  My professional journey and achievements
+                  {t('experience.subtitle')}
                 </motion.p>
               </div>
 
@@ -557,13 +560,13 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   variants={itemVariants}
                   className="text-3xl md:text-4xl font-bold"
                 >
-                  Featured Projects
+                  {t('projects.title')}
                 </motion.h2>
                 <motion.p
                   variants={itemVariants}
                   className="text-muted-foreground max-w-2xl mx-auto"
                 >
-                  A selection of my most impactful work
+                  {t('projects.subtitle')}
                 </motion.p>
               </div>
 
@@ -595,13 +598,13 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   variants={itemVariants}
                   className="text-3xl md:text-4xl font-bold"
                 >
-                  Latest Articles
+                  {t('blog.title')}
                 </motion.h2>
                 <motion.p
                   variants={itemVariants}
                   className="text-muted-foreground max-w-2xl mx-auto"
                 >
-                  Thoughts and insights about software development
+                  {t('blog.subtitle')}
                 </motion.p>
               </div>
 
@@ -632,13 +635,13 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
                   variants={itemVariants}
                   className="text-3xl md:text-4xl font-bold"
                 >
-                  Get in Touch
+                  {t('contact.title')}
                 </motion.h2>
                 <motion.p
                   variants={itemVariants}
                   className="text-muted-foreground max-w-2xl mx-auto"
                 >
-                  I'm currently available for new opportunities
+                  {t('contact.subtitle')}
                 </motion.p>
               </div>
 
@@ -648,7 +651,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
               >
                 <Button asChild size="lg" className="group">
                   <Link href="mailto:junweidec@gmail.com">
-                    Contact Me
+                    {t('contact.button')}
                     <ExternalLink
                       className="ml-2 group-hover:translate-x-1 transition-transform"
                       size={20}
@@ -664,8 +667,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ blurDataURL }) => {
       <footer className="bg-background border-t border-border py-8">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-muted-foreground">
-            © {new Date().getFullYear()} Tan Jun Wei (Justin). All rights
-            reserved.
+            {t('footer.copyright', { year: new Date().getFullYear() })}
           </p>
         </div>
       </footer>
