@@ -1,8 +1,10 @@
-import fs from 'fs'
-import path from 'path'
 import { unstable_setRequestLocale } from 'next-intl/server'
-import Portfolio from "@/components/Portfolio"
 import { locales } from '@/i18n'
+import { Hero } from "@/components/Hero"
+import { Projects } from "@/components/Projects"
+import { Skills } from "@/components/Skills"
+import { Experience } from "@/components/Experience"
+import { Contact } from "@/components/Contact"
 
 // Generate static pages for all locales
 export function generateStaticParams() {
@@ -19,7 +21,13 @@ export default async function Home({
   // Enable static rendering
   unstable_setRequestLocale(locale)
 
-  const blurDataURL = fs.readFileSync(path.join(process.cwd(), 'public/profile-blurDataURL.txt'), 'utf8')
-
-  return <Portfolio blurDataURL={blurDataURL} />
+  return (
+    <main className="flex min-h-screen flex-col">
+      <Hero />
+      <Projects />
+      <Skills />
+      <Experience />
+      <Contact />
+    </main>
+  )
 }
